@@ -1,0 +1,33 @@
+body{
+   background-color: #333333;
+   color: #DDDDDD;
+}
+
+
+.jumbotron{
+   font-family: 'EB Garamond', serif;
+   background-image: url("../images/temazcalli_0.png");
+   background-size: cover;
+}
+
+.navbar {
+   margin-bottom: 0px;
+}
+
+.col-md-4 li{
+   margin-bottom: 10px;
+}
+
+#myCarousel{
+   background-color: black;
+   height: 1000px;
+   margin-top: 20px;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+   display: block;
+   height: auto;
+   max-width: 100%;
+   line-height: 1;
+   width: 100%; // TO CENTER IMAGE IN CAROUSEL
+}
