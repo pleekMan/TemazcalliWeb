@@ -10,6 +10,11 @@ body{
    background-size: cover;
 }
 
+.btn-primary{
+   background-color: teal;
+   border: 0px;
+}
+
 .navbar {
    margin-bottom: 0px;
 }
@@ -30,4 +35,24 @@ body{
    max-width: 100%;
    line-height: 1;
    width: 100%; // TO CENTER IMAGE IN CAROUSEL
+}
+
+.coolStuffSection{
+   text-align: center;
+   margin-top: 50px;
+}
+
+.coolStuffSection p{
+   text-align: left;
+}
+.coolStuffSection ul{
+   text-align: left;
+}
+
+.coolStuffSection h3{
+   margin-bottom: 40px;
+}
+
+.glyphicon{
+   font-size: 70px;
 }
