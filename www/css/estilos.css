@@ -61,11 +61,11 @@ body{
 
 .img-circle {
 width: 45%;
+
 }
 
 /*---------- TEXTO -----------*/
 
-p {
-
-
+.bio p{
+    text-align: justify;
 }
