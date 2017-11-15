@@ -94,7 +94,7 @@ $errores = [ ];
 
     <div class="container-fluid-registro registro-body">
 
-    <form action="php/registro.controller.php" method="POST" class="register-form"  enctype="multipart/form-data">
+    <form action="mailto:diodoslab@gmail.com?subject=myform_submissi" method="POST" class="form-control-plaintext" id="staticEmail" enctype="text/plain" onsubmit="location.href='thanks.html';">
 
       <!--CAMPOS PRINCIPALES-->
 
@@ -105,8 +105,8 @@ $errores = [ ];
 <!-- DATO RECUPERADO POR SESSION + POST + ERRORES -->
             <!-- <input name="name" value=" " class="form-control" type="text" placeholder="Nombre"> -->
 <!-- DATO RECUPERADO POR SESSION + POST + ERRORES -->
-          <span class="glyphicon glyphicon-user form-control-feedback">
-          </span>
+          <!-- <span class="glyphicon glyphicon-user form-control-feedback">
+          </span> -->
         </div>
       </div>
 
@@ -117,12 +117,17 @@ $errores = [ ];
 <!-- DATO RECUPERADO POR SESSION + POST + ERRORES -->
           <input name="email" value=" " class="form-control" type="email" placeholder="E-mail">
 <!-- DATO RECUPERADO POR SESSION + POST + ERRORES -->
-          <span class="glyphicon glyphicon-envelope form-control-feedback">
-          </span>
+          <!-- <span class="glyphicon glyphicon-envelope form-control-feedback">
+          </span> -->
         </div>
       </div>
       <!-- /CAMPOS PRINCIPALES-->
-
+      <div class="row">
+        <!-- <label for="form_message">Message</label> -->
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4 form-group">
+      <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+    </div>
+    </div>
 
         <!-- BOTON -->
         <div class="row form-group">

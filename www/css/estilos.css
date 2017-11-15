@@ -10,6 +10,12 @@ body{
    background-size: cover;
 }
 
+.info{
+   font-family: 'EB Garamond', serif;
+   background-image: url("../images/1-ojo-de-pez.jpg");
+   background-size: cover;
+}
+
 .btn-primary{
    background-color: teal;
    border: 0px;
