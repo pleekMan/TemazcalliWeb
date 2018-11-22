@@ -11,73 +11,79 @@ $errores = [ ];
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Temazcalli Dome</title>
 
-   <!-- FONT -->
-    <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Temazcalli Dome - Contact</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/estilos.css" rel="stylesheet">
+  <!-- FONT -->
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond" rel="stylesheet">
 
-    <!--[if lt IE 9]>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 
-  </head>
-  <body>
-    <!-- NAV BAR -->
-    <nav class="navbar navbar-inverse navbar-static-top">
+</head>
+
+<body>
+<!-- NAV BAR -->
+<nav class="navbar navbar-inverse navbar-static-top">
     <div class="container">
-       <div class="navbar-header">
-           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-           </button>
-           <a class="navbar-brand" href="index.html">Temazcalli Dome</a>
-       </div>
-       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-           <ul class="nav navbar-nav navbar-right">
-              <li><a href="about.html">About</a></li>
-              <li class="dropdown">
-                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
-                 <ul class="dropdown-menu">
-                    <li><a href="#">Design</a></li>
-                    <li><a href="#">Development</a></li>
-                    <li><a href="#">Consulting</a></li>
-                 </ul>
-              </li>
-              <li><a href="contact.html">Contact</a></li>
-           </ul>
-       </div>
+      <div class="navbar-header">
+       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+        aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+       </button>
+       <a class="navbar-brand" href="index.html">Temazcalli Dome</a>
+      </div>
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+       <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#trailer">Trailer</a></li>
+        <li class="dropdown">
+          <a href="project.html#topOfPage" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+           aria-expanded="false">The
+           Project<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+           <li><a href="project.html#topOfPage">The Authors</a></li>
+           <li><a href="project.html#historical">Culture and Art</a></li>
+           <li><a href="project.html#software">The Software</a></li>
+           <li><a href="project.html#makingOf">Making-of</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html"><span class="badge badge-info" id="contactListButton">Contact</span></a></li>
+       </ul>
+      </div>
     </div>
-  </nav>
+   </nav>
 
-   <!-- JUMBOTRON LANDING -->
+  <!-- JUMBOTRON LANDING -->
 
-   <div class="jumbotron">
-	<div class="container">
-		<h1>Temazcalli Dome: Contact</h1>
-		<p>Bring The Huichol Spiritual Experience to your freaking Dome !!</p>
-      <h4>Want these awesome visuals in your Dome?</h4>
-		<p>
-         <a class="btn btn-primary btn-lg" href="#" role="button">Contact Us »</a>
-      </p>
-	</div>
-</div>
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Temazcalli Dome</h1>
+      <p>Contact us</p>
+      </br>
+    </div>
+  </div>
 
-<!-- A 3 COLUMN GRID -->
 
-<!-- RECUPERACION DE ARRAY DE ERRORES DESDE SESSION -->
-<!-- si hay data en array de errores, entonces crear row con impresion de los mensajes dentro del array -->
-    <!-- <?php if (!empty($_SESSION['errores'])): ?>
+
+  <!-- A 3 COLUMN GRID -->
+
+  <!-- RECUPERACION DE ARRAY DE ERRORES DESDE SESSION -->
+  <!-- si hay data en array de errores, entonces crear row con impresion de los mensajes dentro del array -->
+  <!-- <?php if (!empty($_SESSION['errores'])): ?>
         <div class="row">
             <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4">
                 <div class="alert alert-danger">
@@ -90,21 +96,29 @@ $errores = [ ];
       <?php else: ?>
       <?php $name = $email = $password = ""; ?>
     <?php endif ?> -->
-<!-- RECUPERACION DE ARRAY DE ERRORES DESDE SESSION -->
+  <!-- RECUPERACION DE ARRAY DE ERRORES DESDE SESSION -->
 
-    <div class="container-fluid-registro registro-body">
+  <div class="container-fluid-registro registro-body">
 
-    <form action="mailto:diodoslab@gmail.com?subject=Contacto para Diodos" method="POST" class="form-control-plaintext" id="staticEmail" enctype="text/plain" onsubmit="location.href='thanks.html';">
+
+    <form action="mailto:diodoslab@gmail.com?subject=Contacto para Diodos" method="POST" class="form-control-plaintext"
+      id="staticEmail" enctype="text/plain" onsubmit="location.href='thanks.html';">
 
       <!--CAMPOS PRINCIPALES-->
 
       <div class="row">
         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4 form-group">
+            <h5>
+                <p class="description text-justify">
+                  Do not hesitate to drop us a message regarding inquiries, general information or anything you feel like:
+              </h5>
+              <hr>
+
           <label class="sr-only control-label" for="primer-nombre">Name</label>
           <input name="nombre" value="" class="form-control" type="text" id="nombre" placeholder="Name">
-<!-- DATO RECUPERADO POR SESSION + POST + ERRORES -->
-            <!-- <input name="name" value=" " class="form-control" type="text" placeholder="Nombre"> -->
-<!-- DATO RECUPERADO POR SESSION + POST + ERRORES -->
+          <!-- DATO RECUPERADO POR SESSION + POST + ERRORES -->
+          <!-- <input name="name" value=" " class="form-control" type="text" placeholder="Nombre"> -->
+          <!-- DATO RECUPERADO POR SESSION + POST + ERRORES -->
           <!-- <span class="glyphicon glyphicon-user form-control-feedback">
           </span> -->
         </div>
@@ -114,9 +128,9 @@ $errores = [ ];
         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4 form-group">
           <label class="sr-only" for="email">E-mail</label>
           <!-- <input name="email" value="" class="form-control" type="email" placeholder="E-mail"> -->
-<!-- DATO RECUPERADO POR SESSION + POST + ERRORES -->
+          <!-- DATO RECUPERADO POR SESSION + POST + ERRORES -->
           <input name="email" value=" " class="form-control" type="email" placeholder="E-mail">
-<!-- DATO RECUPERADO POR SESSION + POST + ERRORES -->
+          <!-- DATO RECUPERADO POR SESSION + POST + ERRORES -->
           <!-- <span class="glyphicon glyphicon-envelope form-control-feedback">
           </span> -->
         </div>
@@ -125,17 +139,18 @@ $errores = [ ];
       <div class="row">
         <!-- <label for="form_message">Message</label> -->
         <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4 form-group">
-      <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="4" required="required" data-error="Please,leave us a message."></textarea>
-    </div>
-    </div>
-
-        <!-- BOTON -->
-        <div class="row form-group">
-          <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4 form-group">
-            <button class="btn btn-mg btn-block regbutton">Send</button>
-          </div>
+          <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="4" required="required"
+            data-error="Please,leave us a message."></textarea>
         </div>
-        <!-- BOTON -->
+      </div>
+
+      <!-- BOTON -->
+      <div class="row form-group">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4 form-group">
+          <button class="btn btn-mg btn-block regbutton" id="botonEnviar">Send</button>
+        </div>
+      </div>
+      <!-- BOTON -->
 
 
     </form>
@@ -157,11 +172,12 @@ $errores = [ ];
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <!--
+<script src="js/bootstrap.min.js"></script>
+<!--
     <script>
       $('#myCarousel').carousel('pause');
     </script>
     -->
-  </body>
+</body>
+
 </html>
