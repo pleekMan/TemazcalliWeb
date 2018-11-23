@@ -91,6 +91,9 @@
   <div class="container-fluid-registro registro-body">
 
 
+    <form action="mailto:diodoslab@gmail.com?subject=Contacto para Diodos" method="POST" class="form-control-plaintext"
+      id="staticEmail" enctype="text/plain" onsubmit="location.href='thanks.html';">
+
       <!--CAMPOS PRINCIPALES-->
 
       <div class="row">
@@ -98,28 +101,48 @@
             <h5>
                 <p class="description text-justify">
                   Do not hesitate to drop us a message regarding inquiries, general information or anything you feel like.</p>
-                  <p>You can also drop us an e-mail at:
-
-                    <br>
-                    <br>
-                    <h1>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=diodoslab@gmail.com" target="_blank"><strong> diodoslab@gmail.com</strong></a>
-                    </h1>
-                  </p>
-                </br>
-
+                  <p>You can also drop us an e-mail at <strong> diodoslab@gmail.com</strong></p>
               </h5>
-<!-- A 3 COLUMN GRID -->
-              <section id="contact_image">
-                <div class="container">
-                  <div class="row">
-                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-0">
-                      <img class="img-responsive" src="images/fondo4-temaz.jpg" alt="God head">
-                    </div>
-                  </div>
-                </div>
-              </section>
               <hr>
+
+          <label class="sr-only control-label" for="primer-nombre">Name</label>
+          <input name="nombre" value="" class="form-control" type="text" id="nombre" placeholder="Name">
+          <!-- DATO RECUPERADO POR SESSION + POST + ERRORES -->
+          <!-- <input name="name" value=" " class="form-control" type="text" placeholder="Nombre"> -->
+          <!-- DATO RECUPERADO POR SESSION + POST + ERRORES -->
+          <!-- <span class="glyphicon glyphicon-user form-control-feedback">
+          </span> -->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4 form-group">
+          <label class="sr-only" for="email">E-mail</label>
+          <!-- <input name="email" value="" class="form-control" type="email" placeholder="E-mail"> -->
+          <!-- DATO RECUPERADO POR SESSION + POST + ERRORES -->
+          <input name="email" value=" " class="form-control" type="email" placeholder="E-mail">
+          <!-- DATO RECUPERADO POR SESSION + POST + ERRORES -->
+          <!-- <span class="glyphicon glyphicon-envelope form-control-feedback">
+          </span> -->
+        </div>
+      </div>
+      <!-- /CAMPOS PRINCIPALES-->
+      <div class="row">
+        <!-- <label for="form_message">Message</label> -->
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4 form-group">
+          <textarea id="form_message" name="message" class="form-control" placeholder="Message" rows="4" required="required"
+            data-error="Please,leave us a message."></textarea>
+        </div>
+      </div>
+
+      <!-- BOTON -->
+      <div class="row form-group">
+        <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-lg-4 col-lg-offset-4 form-group">
+          <button class="btn btn-mg btn-block regbutton" id="botonEnviar">Send</button>
+        </div>
+      </div>
+      <!-- BOTON -->
+
 
     </form>
 
